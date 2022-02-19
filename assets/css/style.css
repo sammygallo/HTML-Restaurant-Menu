@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+
 html,
 body {
     margin: 0;
     padding: 0;
     background-color: beige;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -15,6 +18,7 @@ h3,
 p,
 li {
     color: green;
+    margin: unset;
 }
 
 img {
@@ -53,21 +57,24 @@ nav a:hover {
 }
 
 #banner {
-    width: 100%;
+    width: 50%;
     height: auto;
     background-color: white;
+    transition: .5s;
 }
 
-#banner img {
-    width: 60%;
-    height: auto;
+@media (max-width:600px) {
+    #banner {
+        width: 100%;
+        transition: .5s;
+    }
 }
 
 .service {
     display: inline-block;
     background-color: white;
-    border: 5px solid green;
-    border-radius: 5px;
+    border: 1px solid green;
+    border-radius: 10px;
     color: darkred;
     font-size: 2em;
     padding: 20px;
